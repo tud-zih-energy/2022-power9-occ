@@ -1,0 +1,35 @@
+# separation of value changes
+#  all in ns
+###
+
+hwmon (sensor)
+  mean of <=60ms: 40075224.475
+            mean: 61203358.67602
+occ (acc)
+  mean of <=60ms: 40075249.384717
+            mean: 40075249.384717
+occ (sensor)
+  mean of <=60ms: 40075349.313564
+            mean: 64327220.733828
+occ optimized (acc)
+  mean of <=60ms: 40075246.868738
+            mean: 40075246.868738
+occ optimized (sensor)
+  mean of <=60ms: 40075378.470785
+            mean: 67304221.844515
+all in ns
+occ optimized all samples:  16777215 #
+     single buffer active:  14092351 #
+      both buffers active:  2684864 #
+ >>> fraction of both buffers active:  0.1600304 
+duration of a single readout (overhead), all in ns
+hwmon -- mean, sstdev
+  4292.778 197.9012 
+occ vanilla -- mean, sstdev
+  10849.25 572.0213 
+occ optimized (all) -- mean, sstdev
+  3771.105 467.5693 
+occ optimized (single buffer active) -- mean, sstdev
+  3583.278 163.6224 
+occ optimized (both buffers active) -- mean, sstdev
+  4756.973 261.7078 

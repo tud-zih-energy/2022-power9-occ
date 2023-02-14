@@ -1,0 +1,26 @@
+diff --git a/src/configurations/p9_highlow/experiment.cpp b/src/configurations/p9_highlow/experiment.cpp
+index e5df3b2..657804d 100644
+--- a/src/configurations/p9_highlow/experiment.cpp
++++ b/src/configurations/p9_highlow/experiment.cpp
+@@ -90,7 +90,7 @@ void run_experiments(roco2::chrono::time_point starting_point, bool eta_only)
+ 
+     // ------ EDIT GENERIC SETTINGS BELOW THIS LINE ------
+ 
+-    auto experiment_duration = std::chrono::seconds(20);
++    auto experiment_duration = std::chrono::seconds(120);
+     auto on_list = block_pattern(176);
+ 
+     // ------ EDIT GENERIC SETTINGS ABOVE THIS LINE ------
+diff --git a/src/configurations/p9_highlow/run_slurm.sh.in b/src/configurations/p9_highlow/run_slurm.sh.in
+index b74c559..7393695 100755
+--- a/src/configurations/p9_highlow/run_slurm.sh.in
++++ b/src/configurations/p9_highlow/run_slurm.sh.in
+@@ -1,7 +1,7 @@
+ #!/bin/bash
+ 
+ #SBATCH --hint=multithread
+-#SBATCH --time=01:59:59
++#SBATCH --time=05:59:59
+ #SBATCH --ntasks=1
+ #SBATCH --nodes=1
+ #SBATCH --cpus-per-task=176
