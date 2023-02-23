@@ -31,6 +31,6 @@ Each configuration (workload, number of active threads) has its sensor readouts 
 - sankey plots/power distribution scheme: `plots/domains`
   - `flake.lock`, `flake.nix`: nix files to provide environment where the ggsankey R module is available
   - `sankey.R`: plot itself, automatically picks the configuration with the highest power total power consumption
-  - `sankey.tex`: built sankey plot as tikz/latex source (for standalone PDF)
+  - `domains.tex`: built sankey plot as tikz/latex source (for standalone PDF)
 - other files
   - `README.md`: this file
